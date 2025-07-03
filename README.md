@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CollabUp Recommendation System Backend
 
 This is the backend API for the CollabUp recommendation system that provides intelligent search and recommendation functionality across all platform collections.
@@ -272,3 +273,7 @@ For issues or questions:
 2. Verify Firebase configuration
 3. Test with the provided curl commands
 4. Check browser console for frontend errors 
+=======
+# collabup-backend
+This contains the backend part of CollabUp
+>>>>>>> 72301940509aef842886a53a9b85cf557515a855
