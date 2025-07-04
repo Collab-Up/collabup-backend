@@ -7,7 +7,12 @@ dotenv.config();
 const PORT = process.env.PORT || 5050;
 const app = express();
 
-app.use(cors());
+// Allow only the Vercel frontend domain for CORS
+app.use(cors({
+  origin: 'https://frontend-two-omega-26.vercel.app',
+  methods: ['GET', 'POST', 'OPTIONS'],
+  credentials: true
+}));
 app.use(express.json());
 
 app.post("/send-feedback", async (req, res) => {
