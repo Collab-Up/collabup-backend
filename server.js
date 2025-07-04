@@ -53,6 +53,7 @@ Message: ${message}
 });
 
 app.post("/api/send-email", async (req, res) => {
+  console.log('DEBUG: /api/send-email req.body:', req.body);
   const { to, subject, text, html } = req.body;
   if (!to || !subject || !text) {
     return res.status(400).json({ error: "To, subject, and text are required." });
